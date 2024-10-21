@@ -62,7 +62,7 @@ $this->need('header.php');
             
             <section class="my-6 flex relative page_next justify-between text-xs w-full " >
                 <div>
-                    <?php $this->pageLink('Previous >'); ?>
+                    <?php $this->pageLink('< Previous'); ?>
                 </div>
                 <div>
                     <?php $this->pageLink('Next >','next'); ?>
