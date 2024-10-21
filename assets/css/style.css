@@ -1,0 +1,343 @@
+:root{
+    --swiper-navigation-size: 44px;
+    --swiper-navigation-top-offset: 50%;
+    --swiper-navigation-sides-offset: 10px;
+    --swiper-navigation-color: var(--swiper-theme-color);
+}
+::-webkit-scrollbar {
+    width: 4px;
+    height: 1px;
+}
+::-webkit-scrollbar-thumb {
+    background: #dad9d9;
+    border-radius: 2px;
+}
+::selection {
+    background: rgba(0,0,0,.7);
+    color: #FFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    letter-spacing: 1.8pt;
+    word-spacing: 1.2pt;
+}
+
+body{
+    background: #fff;
+    background-color: rgb(248 250 252);
+}
+
+a {
+    text-decoration: none;
+    color: #858585;
+}
+
+.md-container{
+    max-width:868px;
+}
+
+.mr-auto	{margin-right: auto;}
+
+.ml-auto	{margin-left: auto;}
+
+.mt-4	{margin-top: 1rem; /* 16px */}
+
+.mt-9	{margin-top: 2.25rem; /* 36px */}
+
+.mb-3\.5	{margin-bottom: 0.875rem; /* 14px */}
+
+.mb-7	{margin-bottom: 1.75rem; /* 28px */}
+
+.py-1\.5	{padding-top: 0.375rem; /* 6px */
+padding-bottom: 0.375rem; /* 6px */}
+
+.leading-7	{line-height: 1.75rem; /* 28px */}
+
+.list-none	{list-style-type: none;}
+
+.shadow-sm	{box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);}
+
+.bg-white	{background-color: rgb(255 255 255);}
+
+.bg-black	{background-color: rgb(0 0 0);}
+
+.bg-transparent	{background-color: transparent;}
+
+.bg-slate-50	{background-color: rgb(248 250 252);}
+
+.text-slate-400	{color: rgb(148 163 184);}
+
+.my-3	{margin-top: 0.75rem; /* 12px */
+margin-bottom: 0.75rem; /* 12px */}
+
+.my-6	{margin-top: 1.5rem; /* 24px */
+margin-bottom: 1.5rem; /* 24px */}
+
+.my-10	{margin-top: 2.5rem; /* 40px */
+margin-bottom: 2.5rem; /* 40px */}
+
+.py-3	{padding: 0.75rem 0; /* 12px */}
+
+.px-3	{padding-left: 0.75rem; /* 12px */
+padding-right: 0.75rem; /* 12px */}
+
+.p-2	{padding: 0.5rem; /* 8px */}
+
+.p-5	{padding: 1.25rem; /* 20px */}
+
+.p-7	{padding: 1.75rem; /* 28px */}
+
+.text-center	{text-align: center;}
+
+.text-left	{text-align: left;}
+
+.text-end	{text-align: end;}
+
+.w-full    {width: 100%;}
+
+.block	{display: block;}
+
+.hidden	{display: none;}
+
+.flex	{display: flex;}
+
+.justify-center	{justify-content: center;}
+
+.justify-between	{justify-content: space-between;}
+
+.gap-2	{gap: 0.5rem; /* 8px */}
+
+.relative	{position: relative;}
+
+.absolute    {position: absolute;}
+
+.right-0	{right: 0px;}
+
+.bottom-0	{bottom: 0px;}
+
+.float-left   {float: left;}
+
+.float-right	{float: right;}
+
+.border{border-width:0;}
+
+.border-b-1	{border-bottom-width: 1px;}
+
+.border-slate-50	{border-color: rgb(248 250 252);}
+
+.border-solid	{border-style: solid;}
+
+.text-xs	{font-size: 0.75rem;}
+
+.text-sm	{font-size: 0.875rem }
+
+.text-base	{font-size: 1rem; /* 16px */}
+
+.opacity-15 {opacity: 0.15;}
+
+.opacity-85	{opacity: 0.58;}
+
+.box-border	{box-sizing: border-box;}
+
+.outline-0	{outline-width: 0px;}
+
+.object-cover	{object-fit: cover;}
+
+.post-title a:after {
+    content: '';
+    position: absolute;
+    bottom: -1em;
+    left: 0;
+    width: 100%;
+    height: 1em;
+    background: radial-gradient(circle at 50% 1.3em,transparent 24%,#555 28%,transparent 32%),radial-gradient(circle at 50% -0.3em,transparent 24%,#555 28%,transparent 32%),transparent;
+    background-size: 1em 1em;
+    background-position: 0 -0.5em,0.5em 0.5em;
+    background-repeat: repeat;
+}
+
+.post-content p {
+    font-size: 16px;
+    margin: 10px 0;
+    line-height: 2.2;
+    letter-spacing: 3pt;
+}
+
+.post-content blockquote {
+    font-size: 14px;
+    margin: 20px 0;
+    line-height: 2.2;
+    letter-spacing: 3pt;
+    border-left: 5px solid rgb(248 250 252);
+    padding: 5px 0px 5px 10px;
+    background: rgb(248 250 252 / 30%);
+}
+
+.post-content a {
+    margin: 0 5px;
+    border-bottom: 1px dashed #a9a9a9;
+}
+
+.post-content code:not([class]) {
+    color: rgb(153 27 27 / 73%);
+    background: rgb(248 250 252);
+    padding: .2rem .5rem ;
+}
+
+.post-content ol {
+    margin: 30px 0;
+}
+
+.post-content ol li {
+    font-size: 14px;
+    line-height: 2.2;
+    letter-spacing: 3pt;
+    margin-left: 30px;
+}
+
+.post-content h1 , .post-content h2 , .post-content h3, .post-content h4, .post-content h5, .post-content h6{
+    margin: 20px 0;
+}
+
+.post-content waterfall {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0 .5rem;
+}
+
+.post-content waterfall>* {
+	flex-grow: 1;
+}
+
+.post-content waterfall>* [data-fancybox*=gallery] {
+	position: relative;
+	display: flex;
+	justify-content: center;
+}
+
+.post-content waterfall>* img {
+	display: block;
+	max-width: 100%;
+	object-fit: cover;
+	transition: 0.5s;
+	height: 12rem;
+	max-height: 30vw;
+	flex-grow: 1;
+}
+
+.post-content img[data-src]:not(.loaded) {
+	filter: blur(10px) brightness(1);
+}
+
+.post-content img[data-src].lazyloaded {
+	cursor: zoom-in;
+	filter: none;
+}
+
+img {
+	-webkit-transition: filter 375ms ease-in .2s, -webkit-transform .6s;
+	-moz-transition: filter 375ms ease-in .2s, -moz-transform .6s;
+	-o-transition: filter 375ms ease-in .2s, -o-transform .6s;
+	-ms-transition: filter 375ms ease-in .2s, -ms-transform .6s;
+	transition: filter 375ms ease-in .2s, transform .6s;
+}
+
+.post-content img {
+	max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    margin-bottom: 20px;
+    transition: .3s;
+}
+
+.post-content img:hover {
+	transition: .3s;
+	filter: brightness(50%);
+}
+
+.swiper {
+    width:auto;
+    height:230px;
+}
+
+.page_next a , a.content-page{
+    color: rgb(153 27 27);
+}
+
+.comment-author .fn{
+    display: inline;
+    font-weight: normal;
+    margin-left: 0px;
+    text-transform: none;
+    background: linear-gradient(transparent 53%,#FFF0F5 53%);
+}
+
+.comment-author a {
+    color: #222;
+}
+
+.comment-content a{
+    color: #858585;
+    border-bottom: 1px dashed #a9a9a9;
+}
+
+.comment-content pre{
+    max-height: 140px;
+    overflow: auto;
+    margin: 10px 0;
+    background: rgb(0 0 0 / 5%);
+    color: #666;
+    padding: 10px;
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+.comment-list > .comment-body > .comment-children > .comment-list > .comment-body{
+    margin: 30px 0 20px 25px;
+}
+
+.comment-body{
+    margin: 40px 0;
+}
+
+#back-to-top {
+    z-index: 99;
+    width: 0;
+    height: 0;
+    border-bottom: 20px solid rgb(249, 110, 87);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    display: block;
+    position: fixed;
+    right: 15px;
+    bottom: 12px;
+    cursor: pointer;
+    opacity: .55;
+}
+
+@media screen and (max-width: 600px) {
+    .md\:my-6{
+        margin: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
