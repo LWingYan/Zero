@@ -39,6 +39,9 @@ $this->need('header.php');
                         type="song"
                         id="<?php $this->fields->aplayer() ?>">
                     </meting-js>
+
+                    <?php elseif($this->fields->article_type == "book"): ?><!-- 音乐样式 -->
+                    <book data-doubanId="<?php $this->fields->doubanId() ?>"></book>
                     
                     
                     <?php else: ?><!-- 默认样式 -->

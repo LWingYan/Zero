@@ -233,7 +233,7 @@ array_push($views, $cid);
 /* 增加自定义字段 */
 function themeFields($layout)
 {
-    $article_type= new Typecho_Widget_Helper_Form_Element_Radio('article_type',array('0' => _t('文章'),'photos' => _t('多图/相册'),'aplayer' => _t('音乐')),'0',_t('文章类型'),_t("选择文章类型首页输出"));
+    $article_type= new Typecho_Widget_Helper_Form_Element_Radio('article_type',array('0' => _t('文章'),'photos' => _t('多图/相册'),'aplayer' => _t('音乐'),'book' => _t('书籍')),'0',_t('文章类型'),_t("选择文章类型首页输出"));
     $layout->addItem($article_type);
     
     $keywords = new Typecho_Widget_Helper_Form_Element_Text(
@@ -269,7 +269,14 @@ function themeFields($layout)
     );
     $layout->addItem($aplayer);
 
-    
+    $doubanId = new Typecho_Widget_Helper_Form_Element_Text(
+        'doubanId',
+        NULL,
+        NULL,
+        '豆瓣Id',
+        '介绍：需要添加的书籍豆瓣Id'
+    );
+    $layout->addItem($doubanId);
 }
 /**
 * 显示上一篇
