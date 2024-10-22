@@ -321,6 +321,22 @@ img {
     opacity: .55;
 }
 
+#book-info {
+    display: flex;
+}
+
+#book-info img {
+    height: 200px;
+    width: auto;
+}
+
+#book-info > div {
+    height: 200px;
+    overflow-y: auto;
+    flex: 1;
+    padding: 10px;
+}
+
 @media screen and (max-width: 600px) {
     .md\:my-6{
         margin: 0;

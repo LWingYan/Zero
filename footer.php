@@ -36,12 +36,13 @@
     </script>
     <!-- 幻灯片 -->
     <script src="<?php _getAssets('assets/swiper/swiper-element-bundle.min.js'); ?>"></script>
-    <script>
+    <script type="text/javascript">
         const swiper = new Swiper('.swiper', {
             autoplay: {
            delay: 2500,
          },
         });
+        const themeUrl = '<?php $this->options->themeUrl(); ?>';
     </script>
     <!-- 访客优化 -->
     <script src="//instant.page/5.2.0" type="module" integrity="sha384-jnZyxPjiipYXnSU0ygqeac2q7CVYMbh84q0uHVRRxEtvFPiQYbXWUorga2aqZJ0z"></script>
