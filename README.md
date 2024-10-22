@@ -1,3 +1,7 @@
+### 最新版本下载
+
+<a href="https://github.com/LWingYan/Zero/releases" >1.3版本下载</a> 新增书单类型 感谢 [Shawn](https://shawnzeng.com/) 
+
 ### 有话说
 
 续上一款Pamper之后的第二款零°Zero 之后还会有一款暂时保密 该主题主打就是简洁 没有多余的内容 也没有花里胡哨的装饰
